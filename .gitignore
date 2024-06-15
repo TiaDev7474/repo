@@ -1,0 +1,127 @@
+# Miscellaneous
+cod-eni-mobile/*.class
+cod-eni-mobile/*.log
+cod-eni-mobile/*.pyc
+cod-eni-mobile/*.swp
+cod-eni-mobile/.DS_Store
+cod-eni-mobile/.atom/
+cod-eni-mobile/.buildlog/
+cod-eni-mobile/.history
+cod-eni-mobile/.svn/
+cod-eni-mobile/migrate_working_dir/
+
+# IntelliJ related
+cod-eni-mobile/*.iml
+cod-eni-mobile/*.ipr
+cod-eni-mobile/*.iws
+cod-eni-mobile/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+cod-eni-mobile/**/doc/api/
+cod-eni-mobile/**/ios/Flutter/.last_build_id
+cod-eni-mobile/.dart_tool/
+cod-eni-mobile/.flutter-plugins
+cod-eni-mobile/.flutter-plugins-dependencies
+cod-eni-mobile/.packages
+cod-eni-mobile/.pub-cache/
+cod-eni-mobile/.pub/
+cod-eni-mobile/build/
+
+# Symbolication related
+cod-eni-mobile/app.*.symbols
+
+# Obfuscation related
+cod-eni-mobile/app.*.map.json
+
+# Android Studio will place build artifacts here
+cod-eni-mobile/android/app/debug
+cod-eni-mobile/android/app/profile
+cod-eni-mobile/android/app/release
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+cod-eni-frontend/node_modules
+cod-eni-frontend/pnp
+cod-eni-frontend/pnp.js
+cod-eni-frontend/yarn/install-state.gz
+nestjs-template/node_moules
+*.env
+
+cityzen-connect-sse/node_modules
+
+
+# testing
+cod-eni-frontend/coverage
+cod-eni-frontend/.env
+# next.js
+cod-eni-frontend/.next/
+cod-eni-frontend/out/
+
+# production
+cod-eni-frontend/build
+
+# misc
+cod-eni-frontend/.DS_Store
+cod-eni-frontend/*.pem
+
+# debug
+cod-eni-frontend/npm-debug.log*
+cod-eni-frontend/yarn-debug.log*
+cod-eni-frontend/yarn-error.log*
+
+# local env files
+cod-eni-frontend/.env*.local
+
+# vercel
+cod-eni-frontend/.vercel
+
+# typescript
+cod-eni-frontend/*.tsbuildinfo
+cod-eni-frontend/next-env.d.ts
+
+
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+cod-eni-frontend/providers/providers/node_modules
+cod-eni-frontend/providers/providers//.pnp
+cod-eni-frontend/providers/providers/.pnp.js
+cod-eni-frontend/providers/providers/.yarn/install-state.gz
+
+# testing
+cod-eni-frontend/providers/providers/coverage
+
+# next.js
+cod-eni-frontend/providers/providers/.next/
+cod-eni-frontend/providers/providers/out/
+
+# production
+cod-eni-frontend/providers/providers/build
+
+# misc
+cod-eni-frontend/providers/providers/.DS_Store
+cod-eni-frontend/providers/providers/*.pem
+
+# debug
+cod-eni-frontend/providers/providers/npm-debug.log*
+cod-eni-frontend/providers/providers/yarn-debug.log*
+cod-eni-frontend/providers/providers/yarn-error.log*
+
+# local env files
+cod-eni-frontend/providers/providers/.env*.local
+
+# vercel
+cod-eni-frontend/providers/providers/.vercel
+
+# typescript
+cod-eni-frontend/providers/providers/*.tsbuildinfo
+cod-eni-frontend/providers/providers/next-env.d.ts
