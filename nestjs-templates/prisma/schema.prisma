@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model App {
+  app_id            String    @id
+  app_client_id     String    @unique
+  app_client_secret String    @unique
+  app_name          String
+  app_callback_url  String
+  app_statut        AppStatus @default(UNVERIFIED)
+}
+
+enum AppStatus {
+  UNVERIFIED
+  VERIFIED
+}
+
+model User {
+  user_id                String                  @id
+  firstname              String
+  password_hash          String
+  lastname               String
+  profile_picture        String?
+  IdentityProvider       IdentityProvider?
+  DigitalIdentityRequest DigitalIdentityRequest?
+}
+
+model IdentityProvider {
+  identity_provider_id   Int    @id @default(autoincrement())
+  identity_provider_name String
+  user_id                String @unique
+  user                   User   @relation(references: [user_id], fields: [user_id])
+  access_token           String
+  refresh_token          String
+}
+
+model DigitalIdentityRequest {
+  id               Int      @id @default(autoincrement())
+  fullName         String
+  birthDate        DateTime
+  birthPlace       String
+  gender           String
+  nationality      String
+  address          String
+  phoneNumber      String
+  email            String
+  parentNames      String
+  residenceProof   String
+  identityDocument String
+  photo            String
+  state            String   @default("pending") // added state field
+  uniqueId         String? // added uniqueId field
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  user_id          String?  @unique
+  user             User?    @relation(references: [user_id], fields: [user_id])
+}
